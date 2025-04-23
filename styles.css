@@ -1,0 +1,311 @@
+/* Основной фон */
+body {
+	background: linear-gradient(to bottom right, #0f0f1a, #1c0f2e);
+	color: #dcdcdc;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	margin: 0;
+	padding: 0;
+	line-height: 1.6;
+}
+
+/* Стиль заголовка с гифкой */
+header {
+	position: relative;
+	padding: 80px 0;
+	text-align: center;
+	color: white;
+	background-image: url('gifs/deathpp.gif'); /* Путь к вашей гифке */
+	background-size: cover; /* Масштабируем фон на весь элемент */
+	background-position: center; /* Центрируем гифку */
+	background-repeat: no-repeat; /* Не повторяем гифку */
+	z-index: -1; /* Помещаем гифку за текст */
+}
+
+h1 {
+	font-size: 4rem;
+	font-weight: bold;
+	letter-spacing: 2px;
+	z-index: 1; /* Текст поверх фона */
+}
+
+/* Секция About Spectre */
+#about {
+	padding: 20px;
+	background-color: rgba(0, 0, 0, 0.6);
+	border-radius: 8px;
+	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.7);
+}
+
+#about h2 {
+	color: #a472ff;
+	text-align: center;
+	font-size: 28px;
+	margin-bottom: 20px;
+}
+
+/* Оформление текста о Spectre */
+.about-content {
+	background-color: rgba(255, 255, 255, 0.1);
+	border-radius: 8px;
+	padding: 20px;
+	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.7);
+}
+
+.about-content p {
+	font-size: 18px;
+	text-align: justify;
+	color: #dcdcdc;
+	margin-bottom: 15px;
+	line-height: 1.6;
+}
+
+.about-content p strong {
+	color: #a472ff; /* Цвет для названия Spectre */
+}
+
+.about-content p em {
+	color: #a472ff; /* Цвет для "Mercurial" */
+}
+
+.about-content p:hover {
+	transform: scale(1.05); /* Увеличение текста при наведении */
+	transition: transform 0.3s ease;
+}
+
+/* Стили для кнопок навигации (About, Lore, etc.) */
+nav {
+	display: flex;
+	justify-content: center;
+	background-color: #1b1129;
+	padding: 10px;
+	gap: 15px;
+}
+
+nav button {
+	background-color: #4b2c77;
+	border: none;
+	color: white;
+	padding: 10px 20px;
+	border-radius: 8px;
+	cursor: pointer;
+	transition: background 0.3s ease;
+}
+
+nav button:hover {
+	background-color: #7137a7;
+}
+
+/* Стили для изображений Mindset */
+.mindset-images {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 15px;
+	margin-top: 20px;
+}
+
+.mindset-img {
+	width: 250px; /* Одинаковая ширина для всех изображений */
+	height: 350px; /* Одинаковая высота для всех изображений */
+	object-fit: cover; /* Сохранение пропорций изображений */
+	border: 4px solid #6e2cc2; /* Рамка вокруг изображений */
+	border-radius: 12px;
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.6);
+	transition: transform 0.3s ease;
+}
+
+.mindset-img:hover {
+	transform: scale(1.05); /* Увеличение изображения при наведении */
+}
+
+/* Секция с лором */
+#lore {
+	padding: 20px;
+	background-color: rgba(0, 0, 0, 0.6);
+	border-radius: 8px;
+	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.7);
+}
+
+/* Стили для изображений Spectre */
+.spectre-images {
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	margin-top: 20px;
+}
+
+.spectre-img {
+	width: 300px; /* Одинаковая ширина для всех изображений */
+	height: 400px; /* Одинаковая высота для всех изображений */
+	object-fit: cover; /* Обеспечит сохранение пропорций изображения */
+	border-radius: 10px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
+	transition: transform 0.3s ease;
+}
+
+.spectre-img:hover {
+	transform: scale(1.05); /* Увеличение изображения при наведении */
+}
+
+/* Стили для арканы Spectre */
+.arcane-spectre {
+	text-align: center;
+	margin-top: 30px;
+}
+
+.spectre-arcane-gif {
+	width: 500px; /* Размер гифки */
+	height: auto;
+	border-radius: 10px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
+	transition: transform 0.3s ease;
+}
+
+.spectre-arcane-gif:hover {
+	transform: scale(1.05); /* Увеличение гифки при наведении */
+}
+
+#lore p {
+	font-size: 18px;
+	text-align: justify;
+	padding: 10px;
+	color: #dcdcdc;
+	background-color: rgba(255, 255, 255, 0.1);
+	border-radius: 8px;
+	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.7);
+}
+
+/* Прочие стили */
+h2 {
+	color: #a472ff;
+	text-align: center;
+	font-size: 28px;
+	margin-bottom: 20px;
+}
+
+.hero-img {
+	width: 300px;
+	border: 4px solid #6e2cc2;
+	border-radius: 12px;
+	margin-bottom: 20px;
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.7);
+}
+
+/* Тени и отступы для изображений */
+#abilities img {
+	width: 120px;
+	border: 3px solid #6e2cc2;
+	border-radius: 12px;
+	margin-right: 15px;
+	transition: transform 0.3s ease;
+}
+
+#abilities img:hover {
+	transform: scale(1.1);
+}
+
+/* Стиль для кнопок */
+a {
+	color: #a472ff;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+/* Оформление для ссылок */
+#abilities .ability {
+	background-color: rgba(0, 0, 0, 0.6);
+	margin: 10px;
+	padding: 15px;
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	transition: background-color 0.3s ease;
+}
+
+#abilities .ability:hover {
+	background-color: #7137a7;
+}
+
+#abilities .ability h3 {
+	margin: 0;
+	color: #a472ff;
+	font-size: 22px;
+	margin-left: 20px;
+}
+
+/* Навигация по скинам */
+#skins {
+	padding: 20px;
+	background-color: rgba(0, 0, 0, 0.6);
+	border-radius: 8px;
+	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.7);
+}
+
+/* Кнопки выбора скинов */
+.skin-option {
+	background-color: #4b2c77;
+	border: none;
+	color: white;
+	padding: 10px 20px;
+	border-radius: 8px;
+	cursor: pointer;
+	margin: 10px;
+	transition: background 0.3s ease;
+}
+
+.skin-option:hover {
+	background-color: #7137a7;
+}
+
+/* Для отображения выбранного сета */
+#selected-skin {
+	text-align: center;
+	margin-top: 20px;
+}
+
+#selected-skin img {
+	width: 300px;
+	border: 4px solid #6e2cc2;
+	border-radius: 12px;
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.7);
+}
+
+/* Стили для кнопок в навигации (например, About, Lore) */
+.skin-buttons button {
+	background-color: #4b2c77;
+	border: none;
+	color: white;
+	padding: 10px 20px;
+	border-radius: 8px;
+	cursor: pointer;
+	transition: background 0.3s ease;
+	font-size: 18px;
+	margin: 10px;
+}
+
+.skin-buttons button:hover {
+	background-color: #7137a7;
+}
+
+/* Если у вас есть кнопки с каким-то дополнительным стилем, то сюда можно добавить их */
+.skin-buttons button:focus {
+	outline: none;
+}
+
+/* Стили для изображений скинов */
+.skin-img {
+	width: 300px;
+	height: 400px;
+	object-fit: cover;
+	border: 4px solid #6e2cc2; /* Рамка для скинов */
+	border-radius: 12px;
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.6);
+	transition: transform 0.3s ease;
+}
+
+.skin-img:hover {
+	transform: scale(1.05); /* Увеличение изображения при наведении */
+}
